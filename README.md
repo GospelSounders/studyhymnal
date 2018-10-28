@@ -11,14 +11,14 @@ This is a comprehensive resource of all (or almost all) the hymnals ever used by
 
 ## List of Hymnals
 
-\#  |   Title                           |    Year    | Publisher                                | Compiler
-\#  |   Title                           |    Year    | Publisher                                | Compiler
+\#  |   Title                           |Year    | Publisher                                | Compiler
+-- | ---------------------------------- | -------|-----------------------------------------|------------------
 1.  |   Seventh-day Adventist Hymnal    | 1985       | Review and Herald Publishing Association | Nineteen-member Church Hymnal Committee
 \#  |   Title                           |    Year    | Publisher                                | Compiler
 
 
-\# | Title                                                                       | Year                                                                                             
--- | -------------------------------------------------------------------------- | ----------
-1  | Seventh-day Adventist Hymnal     | 1985
+\# | Title                                                                       | Year     |Publisher                                                                                        
+-- | -------------------------------------------------------------------------- | ----------|--------
+1  | Seventh-day Adventist Hymnal     | 1985 |Review and Herald Publishing Association
 
 

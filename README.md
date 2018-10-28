@@ -16,7 +16,7 @@ This is a comprehensive resource of all (or almost all) the hymnals ever used by
 
 \# | Title                                                                       | Year     |Publisher |Compiler                                                                                       
 -- | -------------------------------------------------------------------------- | ----------|----------|-------------
-1  | [Seventh-day Adventist Hymnal](SDAH1985/README.md)      | 1985 |Review and Herald Publishing Association |Nineteen-member Church Hymnal Committee 
+1  | [Seventh-day Adventist Hymnal](hymnals/SDAH1985/README.md)      | 1985 |Review and Herald Publishing Association |Nineteen-member Church Hymnal Committee 
 
 
 **[⬆ back home](#study-hymnal)**

@@ -2,8 +2,11 @@
 ## Table of Contents
 
 - [Study Hymnal](#study-hymnal)
-- [List of Hymnals](#hymnals)
-- [List of Songs](#songs)
+- [List of Hymnals](#list-of-hymnals)
+- [List of Songs](#list-of-songs)
+    - [List of Titles](#list-of-titles)
+    - [List of First Lines](#list-of-first-lines)
+- [List of Composers](#list-of-composers)
 - [Todo](#todo)
 
 ## Study Hymnal
@@ -11,13 +14,22 @@ This is a comprehensive resource of all (or almost all) the hymnals ever used by
 
 ## List of Hymnals
 
-\#  |   Title                           |Year    | Publisher                                | Compiler
--- | ---------------------------------- |--------|-----------------------------------------|------------------
-1.  |   Seventh-day Adventist Hymnal    | 1985       | Review and Herald Publishing Association | Nineteen-member Church Hymnal Committee 
-
-
 \# | Title                                                                       | Year     |Publisher |Compiler                                                                                       
 -- | -------------------------------------------------------------------------- | ----------|----------|-------------
-1  | Seventh-day Adventist Hymnal     | 1985 |Review and Herald Publishing Association |Nineteen-member Church Hymnal Committee 
+1  | [Seventh-day Adventist Hymnal](SDAH1985/README.md)      | 1985 |Review and Herald Publishing Association |Nineteen-member Church Hymnal Committee 
+
+
+**[⬆ back home](#study-hymnal)**
+
+## List of Songs 
+
+**[⬆ back home](#study-hymnal)**
+### List of Titles
+
+**[⬆ back home](#study-hymnal)**
+### List of First Lines
+
+**[⬆ back home](#study-hymnal)**
+## List of Composers 
 
 

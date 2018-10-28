@@ -2,8 +2,8 @@
 ## Table of Contents
 
 - [Study Hymnal](#study-hymnal)
-- [List of Hymnals](#list-of-hymnals)
-- [Index of Songs](#list-of-songs)
+- [Index of Hymnals](#index-of-hymnals)
+- [Index of Songs](#index-of-songs)
     - [Index of Titles](#index-of-titles)
     - [Index of First Lines](#index-of-first-lines)
 - [Index of Composers](#index-of-composers)

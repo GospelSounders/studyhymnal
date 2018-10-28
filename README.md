@@ -17,3 +17,8 @@ This is a comprehensive resource of all (or almost all) the hymnals ever used by
 \#  |   Title                           |    Year    | Publisher                                | Compiler
 
 
+\# | Title                                                                       | Year                                                                                             
+-- | -------------------------------------------------------------------------- | ----------
+1  | Seventh-day Adventist Hymnal     | 1985
+
+

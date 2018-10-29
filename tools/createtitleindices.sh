@@ -20,7 +20,7 @@ SONGTITLE=$(echo $THIRDLINE | cut -d' ' -f4-)
 
 # remove leading zeros
 SONGNUMBERSHORT=$(echo $SONGNUMBER | sed 's/^0*//')
- if [ !  -z  $SONGNUMBERSHORT  ]; then
+if [ !  -z  $SONGNUMBERSHORT  ]; then
     # echo $SONGNUMBERSHORT'->'$SONGTITLE 
     TMP="$SONGNUMBER->$SONGTITLE"
     TMP=$(echo $TMP| sed -e s/" "/_/g)
@@ -75,10 +75,26 @@ for i in "${SORTEDTITLES[@]}"; do
     SONGNUMBERSHORT=$(echo $SONGNUMBER | sed 's/^0*//')
 
     #insert into README
-    echo "$SONGNUMBERSHORT=>$SONGTITLE"
-    # sed -i "8i8 This is Line 8" ../README.md
+    # echo "$SONGNUMBERSHORT=>$SONGTITLE"
     sed -i "$line a $SONGNUMBERSHORT  | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" README.md
+
+    
+    # HEADER=$(cat songheaders/$SONGNUMBER.md 2>/dev/null )
+
+    # headerline=5
+    # if [ !  -z  "$HEADER"  ]; then
+    # # if [ !  -z  $header ]; then
+    #    sed -i "$headerline a \$header" gitsongs/$SONGNUMBER.md 
+
+    #    sed "5r songheaders/$SONGNUMBER.md" < gitsongs/$SONGNUMBER.md  > tempFile.txt
+    # mv tempFile.txt gitsongs/$SONGNUMBER.md 
+    # fi 
+
+    sed "5r songheaders/$SONGNUMBER.md" < gitsongs/$SONGNUMBER.md  > tempFile.txt
+    mv tempFile.txt gitsongs/$SONGNUMBER.md 
+    
+    
+    # pwd
+    # echo $header
     let "line++"
 done
-
-# wc -l tmp.txt

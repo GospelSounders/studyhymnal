@@ -32,4 +32,7 @@ This is a comprehensive resource of all (or almost all) the hymnals ever used by
 **[⬆ back home](#study-hymnal)**
 ## Index of Composers 
 
+## Todo
+- Auto generate indices
+
 

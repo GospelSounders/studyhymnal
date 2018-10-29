@@ -3,3 +3,30 @@ Rename files in folder
 `
     for file in *.txt; do mv "$file" "${file/.txt/.md}"; done
 `
+
+Change Stanza numbers
+
+`
+find ./ -type f -exec sed -i "s/\([0-9]\)$/# \0/g"  {} \;
+`
+
+
+Hymn title
+`
+find ./ -type f -exec sed -i '1 s/^/# /' {} \;
+`
+
+Insert navigation link at  end of file
+
+`
+find ./ -type f -exec sed -i '$s/$/\n\n[⬅️ Back to index](..\/README.md)/' {} \;
+`
+
+Insert navigation link at beginning of file
+
+`
+find ./ -type f -exec sed -i '1 s/^/[⬅️ Back to index](..\/README.md)\n\n/' {} \;
+`
+
+Numbers
+find ./ -type f -exec sed -n '3{p;q}' {} \; | sed "s/[^0-9]//g"

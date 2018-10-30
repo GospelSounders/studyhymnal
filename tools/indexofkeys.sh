@@ -98,7 +98,7 @@ for i in "${SORTEDKEYS[@]}"; do
         SONGTITLE=$(echo $SONGTITLE| sed -e s/" "/_/g)
         SONGNUMBERSHORT=$(echo $SONGNUMBER | sed 's/^0*//')
         LINE="$i=>$SONGNUMBERSHORT|$SONGTITLE"
-        KEYR=$(echo $i| sed -e s/" "/_/g)
+        KEYR=$(echo $i| sed -e s/_/" "/g)
         # echo $LINE
         if [ !  -z  $SONGNUMBERSHORT  ]; then        
             sed -i "$line a $SONGNUMBERSHORT  | $KEYR | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" README.md

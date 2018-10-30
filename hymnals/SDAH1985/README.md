@@ -710,7 +710,6 @@
 ## Index of Keys
 Key | \#  | Title                        
 -- |------|-------
-|  | [](gitsongs/.md)
 49  | Ab_Major | [Savior,_Breathe_an_Evening_Blessing](gitsongs/049.md)
 70  | Ab_Major | [Praise_Ye_the_Father](gitsongs/070.md)
 130  | Ab_Major | [It_Came_Upon_the_Midnight_Clear](gitsongs/130.md)
@@ -1405,5 +1404,6 @@ Key | \#  | Title
 197  | G_Major | [The_King_of_Love_My_Shepherd_Is](gitsongs/197.md)
 198  | G_Major | [And_Can_It_Be](gitsongs/198.md)
 199  | G_Major | [The_Head_That_Once_Was_Crowned](gitsongs/199.md)
+
 
 **[⬆ back home](#table-of-contents)**

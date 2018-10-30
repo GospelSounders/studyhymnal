@@ -19,7 +19,7 @@ for i in `find ./`; do
     if [ !  -z  $SONGNUMBERSHORT  ]; then
         TMP="$SONGNUMBER->$SONGTITLE"
         TMP=$(echo $TMP| sed -e s/" "/_/g)
-        ALLTITLES+=( $TMP )
+        # ALLTITLES+=( $TMP )
         ALLTITLES[$index]=$TMP
         let "index++"
         echo $index
@@ -48,6 +48,7 @@ for i in "${SORTEDTITLES[@]}"; do
     # echo "$SONGNUMBERSHORT=>$SONGTITLE"
     sed -i "$line a $SONGNUMBERSHORT  | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" README.md
 
+    #insert song headers
     sed "4r songheaders/$SONGNUMBER.md" < gitsongs/$SONGNUMBER.md  > tempFile.txt
     mv tempFile.txt gitsongs/$SONGNUMBER.md 
  

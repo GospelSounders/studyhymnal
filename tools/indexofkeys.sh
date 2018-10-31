@@ -60,8 +60,8 @@ cd $ROOTDIR
 cd $DIR
 cd ../
 
-line=$(grep -n '## Index of Keys' README.md | cut -d: -f 1)
-let "line+=2"
+cp "indexofkeys.template.md" "indexofkeys.md" 
+line=$(grep -n '# Index of Keys' indexofkeys.md | cut -d: -f 1)let "line+=2"
 
 cd "$tmplocation"
 for i in "${SORTEDKEYS[@]}"; do
@@ -95,13 +95,13 @@ for i in "${SORTEDKEYS[@]}"; do
         PARTS=(${LINE//|/ })
         SONGNUMBER=${PARTS[0]}
         SONGTITLE=${PARTS[1]}
-        SONGTITLE=$(echo $SONGTITLE| sed -e s/" "/_/g)
+        SONGTITLE=$(echo $SONGTITLE| sed -e s/_/" "/g)
         SONGNUMBERSHORT=$(echo $SONGNUMBER | sed 's/^0*//')
         LINE="$i=>$SONGNUMBERSHORT|$SONGTITLE"
         KEYR=$(echo $i| sed -e s/_/" "/g)
         # echo $LINE
         if [ !  -z  $SONGNUMBERSHORT  ]; then        
-            sed -i "$line a $SONGNUMBERSHORT  | $KEYR | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" README.md
+            sed -i "$line a $SONGNUMBERSHORT  | $KEYR | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" indexofkeys.md
             let "line++"
         fi
     done

@@ -23,3 +23,11 @@ find ./ -type f -exec sed -i '1 s/^/[⬅️ Back to index](..\/README.md)\n\n/' 
 cd $ROOTDIR
 
 ./createtitleindices.sh "$DIR/gitsongs"
+./indexofkeys.sh "$DIR/gitsongs"
+./indexoftunes.sh "$DIR/gitsongs"
+./indexofauthors.sh "$DIR/gitsongs"
+./metricalindex.sh "$DIR/gitsongs"
+./indexofhymndates.sh "$DIR/gitsongs"
+./indexoforiginallanguages.sh "$DIR/gitsongs"
+./indexoftranslationdates.sh "$DIR/gitsongs"
+./indexofsources.sh "$DIR/gitsongs"

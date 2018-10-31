@@ -1,5 +1,5 @@
 #!/bin/bash
-
+ROOTDIR=$(pwd)
 DIR=$1
 cd $DIR
 pwd
@@ -32,7 +32,9 @@ cd ../
 readarray -td '' SORTEDTITLES < <(printf '%s\0' "${ALLTITLES[@]}" | sort -z)
 printf '%s\n' "${SORTEDTITLES[@]}"
 
-line=$(grep -n '## Index of Titles' README.md | cut -d: -f 1)
+cp "indexoftitles.template.md" "indexoftitles.md" 
+
+line=$(grep -n '# Index of Titles' indexoftitles.md | cut -d: -f 1)
 let "line+=2"
 
 cp README.template.md README.md 
@@ -46,7 +48,7 @@ for i in "${SORTEDTITLES[@]}"; do
 
     #insert into README
     # echo "$SONGNUMBERSHORT=>$SONGTITLE"
-    sed -i "$line a $SONGNUMBERSHORT  | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" README.md
+    sed -i "$line a $SONGNUMBERSHORT  | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" indexoftitles.md
 
     #insert song headers
     sed "4r songheaders/$SONGNUMBER.md" < gitsongs/$SONGNUMBER.md  > tempFile.txt

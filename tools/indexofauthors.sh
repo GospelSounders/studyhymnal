@@ -78,8 +78,8 @@ cd $ROOTDIR
 cd $DIR
 cd ../
 
-cp "indexofauthors.template.md" "indexofauthors.md" 
-line=$(grep -n '# Index of Authors' indexofauthors.md | cut -d: -f 1)
+cp "templates/indexofauthors.template.md" "indices/indexofauthors.md" 
+line=$(grep -n '# Index of Authors' indices/indexofauthors.md | cut -d: -f 1)
 let "line+=2"
 
 cd "$tmplocation"
@@ -120,7 +120,7 @@ for i in "${SORTEDAUTHORS[@]}"; do
         AUTHORR=$(echo $i| sed -e s/_/" "/g)
         # echo $LINE
         if [ !  -z  $SONGNUMBERSHORT  ]; then        
-            sed -i "$line a $SONGNUMBERSHORT  | $AUTHORR | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" indexofauthors.md
+            sed -i "$line a $SONGNUMBERSHORT  | $AUTHORR | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" indices/indexofauthors.md
             let "line++"
         fi
     done

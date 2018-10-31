@@ -60,8 +60,8 @@ cd $ROOTDIR
 cd $DIR
 cd ../
 
-cp "indexofkeys.template.md" "indexofkeys.md" 
-line=$(grep -n '# Index of Keys' indexofkeys.md | cut -d: -f 1)let "line+=2"
+cp "templates/indexofkeys.template.md" "indices/indexofkeys.md" 
+line=$(grep -n '# Index of Keys' indices/indexofkeys.md | cut -d: -f 1)let "line+=2"
 
 cd "$tmplocation"
 for i in "${SORTEDKEYS[@]}"; do
@@ -101,7 +101,7 @@ for i in "${SORTEDKEYS[@]}"; do
         KEYR=$(echo $i| sed -e s/_/" "/g)
         # echo $LINE
         if [ !  -z  $SONGNUMBERSHORT  ]; then        
-            sed -i "$line a $SONGNUMBERSHORT  | $KEYR | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" indexofkeys.md
+            sed -i "$line a $SONGNUMBERSHORT  | $KEYR | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" indices/indexofkeys.md
             let "line++"
         fi
     done

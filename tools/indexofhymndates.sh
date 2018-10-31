@@ -78,8 +78,8 @@ cd $ROOTDIR
 cd $DIR
 cd ../
 
-cp "indexofhymndates.template.md" "indexofhymndates.md" 
-line=$(grep -n '# Index of Hymn Dates' indexofhymndates.md | cut -d: -f 1)
+cp "templates/indexofhymndates.template.md" "indices/indexofhymndates.md" 
+line=$(grep -n '# Index of Hymn Dates' indices/indexofhymndates.md | cut -d: -f 1)
 let "line+=2"
 
 cd "$tmplocation"
@@ -120,7 +120,7 @@ for i in "${SORTEDDATES[@]}"; do
         DATER=$(echo $i| sed -e s/_/" "/g)
         # echo $LINE
         if [ !  -z  $SONGNUMBERSHORT  ]; then        
-            sed -i "$line a $SONGNUMBERSHORT  | $DATER | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" indexofhymndates.md
+            sed -i "$line a $SONGNUMBERSHORT  | $DATER | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" indices/indexofhymndates.md
             let "line++"
         fi
     done

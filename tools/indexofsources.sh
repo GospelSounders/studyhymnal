@@ -77,8 +77,8 @@ cd $ROOTDIR
 cd $DIR
 cd ../
 
-cp "indexofsources.template.md" "indexofsources.md" 
-line=$(grep -n '# Index of Sources' indexofsources.md | cut -d: -f 1)let "line+=2"let "line+=2"let "line+=2"
+cp "templates/indexofsources.template.md" "indices/indexofsources.md" 
+line=$(grep -n '# Index of Sources' indices/indexofsources.md | cut -d: -f 1)let "line+=2"let "line+=2"let "line+=2"
 
 cd "$tmplocation"
 for i in "${SORTEDSOURCES[@]}"; do
@@ -118,7 +118,7 @@ for i in "${SORTEDSOURCES[@]}"; do
         SOURCER=$(echo $i| sed -e s/_/" "/g)
         # echo $LINE
         if [ !  -z  $SONGNUMBERSHORT  ]; then        
-            sed -i "$line a $SONGNUMBERSHORT  | $SOURCER | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" indexofsources.md
+            sed -i "$line a $SONGNUMBERSHORT  | $SOURCER | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" indices/indexofsources.md
             let "line++"
         fi
     done

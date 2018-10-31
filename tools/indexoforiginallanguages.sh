@@ -78,8 +78,8 @@ cd $ROOTDIR
 cd $DIR
 cd ../
 
-cp "indexoforiginallanguages.template.md" "indexoforiginallanguages.md" 
-line=$(grep -n '# Index of Original Languages' indexoforiginallanguages.md | cut -d: -f 1)let "line+=2"let "line+=2"
+cp "templates/indexoforiginallanguages.template.md" "indices/indexoforiginallanguages.md" 
+line=$(grep -n '# Index of Original Languages' indices/indexoforiginallanguages.md | cut -d: -f 1)let "line+=2"let "line+=2"
 
 cd "$tmplocation"
 for i in "${SORTEDLANGUAGES[@]}"; do
@@ -119,7 +119,7 @@ for i in "${SORTEDLANGUAGES[@]}"; do
         LANGUAGER=$(echo $i| sed -e s/_/" "/g)
         # echo $LINE
         if [ !  -z  $SONGNUMBERSHORT  ]; then        
-            sed -i "$line a $SONGNUMBERSHORT  | $LANGUAGER | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" indexoforiginallanguages.md
+            sed -i "$line a $SONGNUMBERSHORT  | $LANGUAGER | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" indices/indexoforiginallanguages.md
             let "line++"
         fi
     done

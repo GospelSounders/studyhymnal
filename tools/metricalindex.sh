@@ -78,8 +78,8 @@ cd $ROOTDIR
 cd $DIR
 cd ../
 
-cp "metricalindex.template.md" "metricalindex.md" 
-line=$(grep -n '# Metrical Index' metricalindex.md | cut -d: -f 1)
+cp "templates/metricalindex.template.md" "indices/metricalindex.md" 
+line=$(grep -n '# Metrical Index' indices/metricalindex.md | cut -d: -f 1)
 let "line+=2"
 
 cd "$tmplocation"
@@ -120,7 +120,7 @@ for i in "${SORTEDMETRICS[@]}"; do
         METRICR=$(echo $i| sed -e s/_/" "/g)
         # echo $LINE
         if [ !  -z  $SONGNUMBERSHORT  ]; then        
-            sed -i "$line a $SONGNUMBERSHORT  | $METRICR | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" metricalindex.md
+            sed -i "$line a $SONGNUMBERSHORT  | $METRICR | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" indices/metricalindex.md
             let "line++"
         fi
     done

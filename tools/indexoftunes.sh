@@ -77,8 +77,8 @@ cd $ROOTDIR
 cd $DIR
 cd ../
 
-cp "indexoftunes.template.md" "indexoftunes.md" 
-line=$(grep -n '# Index of Tunes' indexoftunes.md | cut -d: -f 1)
+cp "templates/indexoftunes.template.md" "indices/indexoftunes.md" 
+line=$(grep -n '# Index of Tunes' indices/indexoftunes.md | cut -d: -f 1)
 let "line+=2"
 
 cd "$tmplocation"
@@ -119,7 +119,7 @@ for i in "${SORTEDTUNES[@]}"; do
         TUNER=$(echo $i| sed -e s/_/" "/g)
         # echo $LINE
         if [ !  -z  $SONGNUMBERSHORT  ]; then        
-            sed -i "$line a $SONGNUMBERSHORT  | $TUNER | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" indexoftunes.md
+            sed -i "$line a $SONGNUMBERSHORT  | $TUNER | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" indices/indexoftunes.md
             let "line++"
         fi
     done

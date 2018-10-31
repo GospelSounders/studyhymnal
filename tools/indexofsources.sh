@@ -78,7 +78,8 @@ cd $DIR
 cd ../
 
 cp "templates/indexofsources.template.md" "indices/indexofsources.md" 
-line=$(grep -n '# Index of Sources' indices/indexofsources.md | cut -d: -f 1)let "line+=2"let "line+=2"let "line+=2"
+line=$(grep -n '# Index of Sources' indices/indexofsources.md | cut -d: -f 1)
+let "line+=2"
 
 cd "$tmplocation"
 for i in "${SORTEDSOURCES[@]}"; do

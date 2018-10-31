@@ -61,7 +61,8 @@ cd $DIR
 cd ../
 
 cp "templates/indexofkeys.template.md" "indices/indexofkeys.md" 
-line=$(grep -n '# Index of Keys' indices/indexofkeys.md | cut -d: -f 1)let "line+=2"
+line=$(grep -n '# Index of Keys' indices/indexofkeys.md | cut -d: -f 1)
+let "line+=2"
 
 cd "$tmplocation"
 for i in "${SORTEDKEYS[@]}"; do

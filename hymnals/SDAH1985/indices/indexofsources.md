@@ -1,4 +1,11 @@
 # Seventh-Day Adventist Hymnal
+
+**[⬅ back to indices](../README.md)**
+
+# Index of Sources
+\# | Composer/Source  | Title | #                       
+-- |------|--------|----------
+1  | Chorale Book for England, 1863 | [Praise to the Lord](gitsongs/001.md) | 693
 3  | Chorale Book for England, 1863 | [God Himself Is With Us](gitsongs/003.md) | 693
 4  | Chorale Book for England, 1863 | [Praise, My Soul, the King of Heaven](gitsongs/004.md) | 693
 5  | Chorale Book for England, 1863 | [All My Hope on God Is Founded](gitsongs/005.md) | 693
@@ -692,20 +699,5 @@
 694  | Chorale Book for England, 1863 | [Praise God, From Whom All Blessings](gitsongs/694.md) | 693
 695  | Chorale Book for England, 1863 | [Praise God, From Whom All Blessings](gitsongs/695.md) | 693
 2  | Geistliche Kirchengesänge, Köln, 1623 | [All Creatures of Our God and King](gitsongs/002.md) | 1
-1  | Chorale Book for England, 1863 | [Praise to the Lord](gitsongs/001.md) | 693
 
-1  | Chorale Book for England, 1863 | [Praise to the Lord](gitsongs/001.md) | 693
 **[⬅ back to indices](../README.md)**
-1  | Chorale Book for England, 1863 | [Praise to the Lord](gitsongs/001.md) | 693
-
-1  | Chorale Book for England, 1863 | [Praise to the Lord](gitsongs/001.md) | 693
-# Index of Sources
-1  | Chorale Book for England, 1863 | [Praise to the Lord](gitsongs/001.md) | 693
-\# | Composer/Source  | Title | #                       
-1  | Chorale Book for England, 1863 | [Praise to the Lord](gitsongs/001.md) | 693
--- |------|--------|----------
-1  | Chorale Book for England, 1863 | [Praise to the Lord](gitsongs/001.md) | 693
-
-1  | Chorale Book for England, 1863 | [Praise to the Lord](gitsongs/001.md) | 693
-**[⬅ back to indices](../README.md)**
-1  | Chorale Book for England, 1863 | [Praise to the Lord](gitsongs/001.md) | 693

@@ -1,4 +1,11 @@
 # Seventh-Day Adventist Hymnal
+
+**[⬅ back to indices](../README.md)**
+
+# Index of Keys
+\# | Key  | Title | #                       
+-- |------|--------|----------
+49  | Ab Major | [Savior, Breathe an Evening Blessing](gitsongs/049.md) | 8
 70  | Ab Major | [Praise Ye the Father](gitsongs/070.md) | 8
 130  | Ab Major | [It Came Upon the Midnight Clear](gitsongs/130.md) | 8
 159  | Ab Major | [The Old Rugged Cross](gitsongs/159.md) | 8
@@ -692,20 +699,5 @@
 197  | G Major | [The King of Love My Shepherd Is](gitsongs/197.md) | 40
 198  | G Major | [And Can It Be](gitsongs/198.md) | 40
 199  | G Major | [The Head That Once Was Crowned](gitsongs/199.md) | 40
-49  | Ab Major | [Savior, Breathe an Evening Blessing](gitsongs/049.md) | 8
 
-49  | Ab Major | [Savior, Breathe an Evening Blessing](gitsongs/049.md) | 8
 **[⬅ back to indices](../README.md)**
-49  | Ab Major | [Savior, Breathe an Evening Blessing](gitsongs/049.md) | 8
-
-49  | Ab Major | [Savior, Breathe an Evening Blessing](gitsongs/049.md) | 8
-# Index of Keys
-49  | Ab Major | [Savior, Breathe an Evening Blessing](gitsongs/049.md) | 8
-\# | Key  | Title | #                       
-49  | Ab Major | [Savior, Breathe an Evening Blessing](gitsongs/049.md) | 8
--- |------|--------|----------
-49  | Ab Major | [Savior, Breathe an Evening Blessing](gitsongs/049.md) | 8
-
-49  | Ab Major | [Savior, Breathe an Evening Blessing](gitsongs/049.md) | 8
-**[⬅ back to indices](../README.md)**
-49  | Ab Major | [Savior, Breathe an Evening Blessing](gitsongs/049.md) | 8

@@ -79,7 +79,8 @@ cd $DIR
 cd ../
 
 cp "templates/indexoforiginallanguages.template.md" "indices/indexoforiginallanguages.md" 
-line=$(grep -n '# Index of Original Languages' indices/indexoforiginallanguages.md | cut -d: -f 1)let "line+=2"let "line+=2"
+line=$(grep -n '# Index of Original Languages' indices/indexoforiginallanguages.md | cut -d: -f 1)
+let "line+=2"
 
 cd "$tmplocation"
 for i in "${SORTEDLANGUAGES[@]}"; do

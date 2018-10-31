@@ -101,6 +101,7 @@ for i in "${SORTEDSOURCES[@]}"; do
     #SORT SONGS
     readarray -td '' SONGSSORTED < <(printf '%s\0' "${SONGS[@]}" | sort -z)
 
+    HYMNCOUNT=$(wc -l < $i)
     tmplocation=$(pwd)
     cd $ROOTDIR
     cd $DIR
@@ -118,7 +119,7 @@ for i in "${SORTEDSOURCES[@]}"; do
         SOURCER=$(echo $i| sed -e s/_/" "/g)
         # echo $LINE
         if [ !  -z  $SONGNUMBERSHORT  ]; then        
-            sed -i "$line a $SONGNUMBERSHORT  | $SOURCER | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" indices/indexofsources.md
+            sed -i "$line a $SONGNUMBERSHORT  | $SOURCER | [$SONGTITLE](gitsongs/$SONGNUMBER.md) | $HYMNCOUNT" indices/indexofsources.md
             let "line++"
         fi
     done

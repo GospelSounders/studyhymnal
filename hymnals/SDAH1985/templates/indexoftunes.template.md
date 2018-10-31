@@ -1,9 +1,9 @@
 # Seventh-Day Adventist Hymnal
 
-**[⬅ back to indices]("README.md")**
+**[⬅ back to indices](../README.md)**
 
 # Index of Tunes
-\# | Tune  | Title                        
--- |------|-------
+\# | Tune  | Title | #                       
+-- |------|--------|----------
 
-**[⬅ back to indices]("README.md")**
+**[⬅ back to indices](../README.md)**

@@ -102,6 +102,7 @@ for i in "${SORTEDLANGUAGES[@]}"; do
     #SORT SONGS
     readarray -td '' SONGSSORTED < <(printf '%s\0' "${SONGS[@]}" | sort -z)
 
+    HYMNCOUNT=$(wc -l < $i)
     tmplocation=$(pwd)
     cd $ROOTDIR
     cd $DIR
@@ -119,7 +120,7 @@ for i in "${SORTEDLANGUAGES[@]}"; do
         LANGUAGER=$(echo $i| sed -e s/_/" "/g)
         # echo $LINE
         if [ !  -z  $SONGNUMBERSHORT  ]; then        
-            sed -i "$line a $SONGNUMBERSHORT  | $LANGUAGER | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" indices/indexoforiginallanguages.md
+            sed -i "$line a $SONGNUMBERSHORT  | $LANGUAGER | [$SONGTITLE](gitsongs/$SONGNUMBER.md) | $HYMNCOUNT" indices/indexoforiginallanguages.md
             let "line++"
         fi
     done

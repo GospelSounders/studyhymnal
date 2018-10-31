@@ -1,6 +1,6 @@
 # Seventh-Day Adventist Hymnal
 
-**[⬅ back to indices]("README.md")**
+**[⬅ back to indices](../README.md)**
 
 # Index of Titles
 \# | Title                        
@@ -700,4 +700,4 @@
 694  | [Praise God, From Whom All Blessings](gitsongs/694.md)
 695  | [Praise God, From Whom All Blessings](gitsongs/695.md)
 
-**[⬅ back to indices]("README.md")**
+**[⬅ back to indices](../README.md)**

@@ -38,7 +38,7 @@ cp "templates/indexoftitles.template.md" "indices/indexoftitles.md"
 line=$(grep -n '# Index of Titles' indices/indexoftitles.md | cut -d: -f 1)
 let "line+=2"
 
-cp README.template.md README.md 
+cp templates/README.template.md README.md 
 
 for i in "${SORTEDTITLES[@]}"; do
     arrIN=(${i//->/ })

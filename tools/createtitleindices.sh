@@ -49,7 +49,7 @@ for i in "${SORTEDTITLES[@]}"; do
 
     #insert into README
     # echo "$SONGNUMBERSHORT=>$SONGTITLE"
-    sed -i "$line a $SONGNUMBERSHORT  | [$SONGTITLE](gitsongs/$SONGNUMBER.md)" indices/indexoftitles.md
+    sed -i "$line a $SONGNUMBERSHORT  | [$SONGTITLE](../gitsongs/$SONGNUMBER.md)" indices/indexoftitles.md
 
     #insert song headers
     sed "4r songheaders/$SONGNUMBER.md" < gitsongs/$SONGNUMBER.md  > tempFile.txt

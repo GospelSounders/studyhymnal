@@ -120,7 +120,7 @@ for i in "${SORTEDSOURCES[@]}"; do
         SOURCER=$(echo $i| sed -e s/_/" "/g)
         # echo $LINE
         if [ !  -z  $SONGNUMBERSHORT  ]; then        
-            sed -i "$line a $SONGNUMBERSHORT  | $SOURCER | [$SONGTITLE](gitsongs/$SONGNUMBER.md) | $HYMNCOUNT" indices/indexofsources.md
+            sed -i "$line a $SONGNUMBERSHORT  | $SOURCER | [$SONGTITLE](../gitsongs/$SONGNUMBER.md) | $HYMNCOUNT" indices/indexofsources.md
             let "line++"
         fi
     done

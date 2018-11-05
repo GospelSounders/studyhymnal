@@ -121,7 +121,7 @@ for i in "${SORTEDLANGUAGES[@]}"; do
         LANGUAGER=$(echo $i| sed -e s/_/" "/g)
         # echo $LINE
         if [ !  -z  $SONGNUMBERSHORT  ]; then        
-            sed -i "$line a $SONGNUMBERSHORT  | $LANGUAGER | [$SONGTITLE](gitsongs/$SONGNUMBER.md) | $HYMNCOUNT" indices/indexoforiginallanguages.md
+            sed -i "$line a $SONGNUMBERSHORT  | $LANGUAGER | [$SONGTITLE](../gitsongs/$SONGNUMBER.md) | $HYMNCOUNT" indices/indexoforiginallanguages.md
             let "line++"
         fi
     done

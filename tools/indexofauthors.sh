@@ -121,7 +121,7 @@ for i in "${SORTEDAUTHORS[@]}"; do
         AUTHOR=$(echo $i| sed -e s/_/" "/g)
         # echo $LINE
         if [ !  -z  $SONGNUMBERSHORT  ]; then        
-            sed -i "$line a $SONGNUMBERSHORT  | $AUTHOR | [$SONGTITLE](gitsongs/$SONGNUMBER.md)| $HYMNCOUNT"  indices/indexofauthors.md
+            sed -i "$line a $SONGNUMBERSHORT  | $AUTHOR | [$SONGTITLE](../gitsongs/$SONGNUMBER.md)| $HYMNCOUNT"  indices/indexofauthors.md
             let "line++"
         fi
     done

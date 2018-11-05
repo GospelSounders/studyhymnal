@@ -121,7 +121,7 @@ for i in "${SORTEDTUNES[@]}"; do
         TUNER=$(echo $i| sed -e s/_/" "/g)
         # echo $LINE
         if [ !  -z  $SONGNUMBERSHORT  ]; then        
-            sed -i "$line a $SONGNUMBERSHORT  | $TUNER | [$SONGTITLE](gitsongs/$SONGNUMBER.md) | $HYMNCOUNT" indices/indexoftunes.md
+            sed -i "$line a $SONGNUMBERSHORT  | $TUNER | [$SONGTITLE](../gitsongs/$SONGNUMBER.md) | $HYMNCOUNT" indices/indexoftunes.md
             let "line++"
         fi
     done

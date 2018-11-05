@@ -122,7 +122,7 @@ for i in "${SORTEDMETRICS[@]}"; do
         METRICR=$(echo $i| sed -e s/_/" "/g)
         # echo $LINE
         if [ !  -z  $SONGNUMBERSHORT  ]; then        
-            sed -i "$line a $SONGNUMBERSHORT  | $METRICR | [$SONGTITLE](gitsongs/$SONGNUMBER.md) | $HYMNCOUNT" indices/metricalindex.md
+            sed -i "$line a $SONGNUMBERSHORT  | $METRICR | [$SONGTITLE](../gitsongs/$SONGNUMBER.md) | $HYMNCOUNT" indices/metricalindex.md
             let "line++"
         fi
     done

@@ -122,7 +122,7 @@ for i in "${SORTEDDATES[@]}"; do
         DATER=$(echo $i| sed -e s/_/" "/g)
         # echo $LINE
         if [ !  -z  $SONGNUMBERSHORT  ]; then        
-            sed -i "$line a $SONGNUMBERSHORT  | $DATER | [$SONGTITLE](gitsongs/$SONGNUMBER.md) | $HYMNCOUNT" indices/indexoftranslationdates.md
+            sed -i "$line a $SONGNUMBERSHORT  | $DATER | [$SONGTITLE](../gitsongs/$SONGNUMBER.md) | $HYMNCOUNT" indices/indexoftranslationdates.md
             let "line++"
         fi
     done

@@ -103,7 +103,7 @@ for i in "${SORTEDKEYS[@]}"; do
         KEYR=$(echo $i| sed -e s/_/" "/g)
         # echo $LINE
         if [ !  -z  $SONGNUMBERSHORT  ]; then        
-            sed -i "$line a $SONGNUMBERSHORT  | $KEYR | [$SONGTITLE](gitsongs/$SONGNUMBER.md) | $HYMNCOUNT" indices/indexofkeys.md
+            sed -i "$line a $SONGNUMBERSHORT  | $KEYR | [$SONGTITLE](../gitsongs/$SONGNUMBER.md) | $HYMNCOUNT" indices/indexofkeys.md
             let "line++"
         fi
     done
